@@ -28,7 +28,7 @@ const HangmanFigure: React.FC<HangmanFigureProps> = ({word}) => {
 
         {word > 3? null: stomach}
         {word > 3? null: head}
-        {hanger}
+   
       </Container>
     </View>
   );

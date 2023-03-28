@@ -26,15 +26,57 @@ export const alphabets = [
   'y',
   'z',
 ];
-export const words = ['yash', 'avi', 'meet', 'parth', 'vivek', 'deepak'];
+export const words = [
+  {
+    word: 'good',
+    antonym: 'bad',
+  },
+  {
+    word: 'happy',
+    antonym: 'sad',
+  },
+  {
+    word: 'big',
+    antonym: 'small',
+  },
+  {
+    word: 'fast',
+    antonym: 'slow',
+  },
+  {
+    word: 'high',
+    antonym: 'low',
+  },
+  {
+    word: 'start',
+    antonym: 'end',
+  },
+  {
+    word: 'in',
+    antonym: 'out',
+  },
+  {
+    word: 'up',
+    antonym: 'down',
+  },
+  {
+    word: 'begin',
+    antonym: 'finish',
+  },
+  {
+    word: 'left',
+    antonym: 'right',
+  },
+]
 
 export const STATUS = {
-  WIN: 'win',
+  WIN: 'winner',
   LOSS: 'Loss',
   NONE: '',
 };
 
-export const COLORS= {
-  DANGER: '#D81E5B',
-  WINNER: '00A878'
-}
+export const COLORS = {
+  DANGER: '#53350A',
+
+  WINNER: '#53350A',
+};

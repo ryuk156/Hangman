@@ -8,14 +8,12 @@ interface KeyboardButtonProps {
 
 const KeyboardButton: React.FC<KeyboardButtonProps> = ({title, onPress}) => {
   return (
-    <TouchableOpacity onPress={onPress} activeOpacity={0.5}>
-      <LinearGradient
-        colors={['#8364e8', '#0974f1']}
-        style={styles.buttonContainer}>
+    <TouchableOpacity onPress={onPress} activeOpacity={0.5}  style={styles.buttonContainer}>
+      
         <View>
           <Text style={styles.buttonTitle}>{title}</Text>
         </View>
-      </LinearGradient>
+     
     </TouchableOpacity>
   );
 };
@@ -23,18 +21,23 @@ const KeyboardButton: React.FC<KeyboardButtonProps> = ({title, onPress}) => {
 const styles = StyleSheet.create({
   buttonContainer: {
     width: 50,
-    height: 30,
+    height: 35,
     margin: 2,
-    backgroundColor: 'red',
+    top: 4,
+    backgroundColor: '#53350A',
     borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 10,
+    borderColor: "white",
+    borderWidth: 2
   },
   buttonTitle: {
+    fontFamily: 'DancingScript-Bold',
     color: 'white',
     textTransform: 'uppercase',
-    fontWeight: '600',
+    fontWeight: '800',
+    fontSize: 18
   },
 });
 
